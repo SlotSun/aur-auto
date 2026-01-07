@@ -14,8 +14,8 @@ pkg_detect_latest() {
 
 pkg_get_update_params() {
 	local version="$1"
-	local base_url="https://github.com/SlotSun/dart_simple_live/archive/refs/tags/"
-	local filename="v${version}.tar.gz"
+	local base_url="https://github.com/SlotSun/dart_simple_live/releases/download/v${version}"
+	local filename="Slive.tar.gz"
 	local url="${base_url}/${filename}"
 
 	# Download and calculate SHA256 for x86_64
@@ -40,9 +40,13 @@ pkg_update_files() {
 	local hash_algo="$4"
 	local checksum="$5"
 	local pkgbuild="${PKG_DIR}/PKGBUILD"
+
+    local base_url="${url%/*}"
+	local url_x86_64="${base_url}/Slive.tar.gz"
     
 	sed -i "s/^pkgver=.*/pkgver=${pkgver}/" "${pkgbuild}"
 	sed -i "s/^pkgrel=.*/pkgrel=1/" "${pkgbuild}"
+    sed -i "s|^source=(\".*\")|source=(\"Slive.tar.gz::${url_x86_64}\")|" "${pkgbuild}"
     sed -i "s/^${hash_algo}sums=.*/${hash_algo}sums=('${checksum}')/" "${pkgbuild}"
 
 	echo "Warning: Only x86_64 checksum updated. Please verify aarch64 manually." >&2
