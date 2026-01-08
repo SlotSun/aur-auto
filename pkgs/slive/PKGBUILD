@@ -22,7 +22,7 @@ prepare() {
 build() {
     cd "$srcdir/dart_simple_live-${pkgver}/simple_live_app"
     fvm flutter build linux --release --no-pub \
-    --dart-define build.version="${pkgver}"
+    --dart-define build.version="${pkgver}" --verbose
 }
 
 package() {
