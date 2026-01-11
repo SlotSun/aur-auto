@@ -2,7 +2,7 @@
 
 # aur-auto
 
-[![AUR 维护者](https://img.shields.io/badge/AUR-xifan-1793D1?logo=arch-linux&logoColor=white)](https://aur.archlinux.org/packages?SeB=m&K=xifan)
+[![AUR 维护者](https://img.shields.io/badge/AUR-SlotSun-1793D1?logo=arch-linux&logoColor=white)](https://aur.archlinux.org/packages?SeB=m&K=SlotSun)
 
 使用 GitHub Actions 自动维护 Arch User Repository 软件包的工具集。
 
@@ -12,7 +12,7 @@
 - 为贡献者与维护者提供双语文档。
 
 ## 维护者
-- xifan `<xifan2333@gmail.com>`
+- SlotSun `<slot_sun@outlook.com>`
 
 ## 文档
 - 仓库规范：[English](docs/guidelines.en.md) | [简体中文](docs/guidelines.zh.md)
@@ -22,8 +22,8 @@
 ## 软件包
 | Package | Description | Upstream | Version | Build Status |
 | --- | --- | --- | --- | --- |
-| `kdenlive-appimage-pure` | A non-linear video editor for Linux using the MLT video framework (AppImage build) | `Kdenlive` | 25.08.2 | [![Build Status](https://img.shields.io/github/actions/workflow/status/xifan2333/aur-auto/build-and-publish.yml?branch=main&logo=github&label=build)](https://github.com/xifan2333/aur-auto/actions/workflows/build-and-publish.yml) |
-| `roxybrowser-bin` | Premier Antidetect Browser - Streamline Your Workflow Effortlessly | `roxybrowser` | 3.6.1 | [![Build Status](https://img.shields.io/github/actions/workflow/status/xifan2333/aur-auto/build-and-publish.yml?branch=main&logo=github&label=build)](https://github.com/xifan2333/aur-auto/actions/workflows/build-and-publish.yml) |
-| `unibarrage-bin` | High-performance real-time proxy tool to unify live barrage data collection across multiple streaming platforms | `unibarrage` | 1.0.1 | [![Build Status](https://img.shields.io/github/actions/workflow/status/xifan2333/aur-auto/build-and-publish.yml?branch=main&logo=github&label=build)](https://github.com/xifan2333/aur-auto/actions/workflows/build-and-publish.yml) |
+| `slive` | 基于Flutter的聚合直播软件，支持多平台直播源聚合与观看。 | `slive` | 1.8.5 | [![Build Status](https://img.shields.io/github/actions/workflow/status/SlotSun/aur-auto/build-and-publish.yml?branch=main&logo=github&label=build)](https://github.com/SlotSun/aur-auto/actions/workflows/build-and-publish.yml) |
+| `slive-bin` | 基于Flutter的聚合直播软件，支持多平台直播源聚合与观看。 | `slive-bin` | 1.8.5 | [![Build Status](https://img.shields.io/github/actions/workflow/status/SlotSun/aur-auto/build-and-publish.yml?branch=main&logo=github&label=build)](https://github.com/SlotSun/aur-auto/actions/workflows/build-and-publish.yml) |
+| `unibarrage-bin` | High-performance real-time proxy tool to unify live barrage data collection across multiple streaming platforms | `unibarrage` | 1.0.1 | [![Build Status](https://img.shields.io/github/actions/workflow/status/SlotSun/aur-auto/build-and-publish.yml?branch=main&logo=github&label=build)](https://github.com/SlotSun/aur-auto/actions/workflows/build-and-publish.yml) |
 
 文档或元数据更新后，请运行 `scripts/build-readme.sh` 重新生成 README。
