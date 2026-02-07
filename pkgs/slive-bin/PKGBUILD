@@ -2,7 +2,7 @@
 # Maintainer: SlotSun <slot_sun@outlook.com>
 pkgname=slive-bin
 _pkgname=slive
-pkgver=1.8.5
+pkgver=1.8.7
 pkgrel=1
 pkgdesc="基于Flutter的聚合直播软件，支持多平台直播源聚合与观看。"
 arch=('x86_64' 'aarch64')
@@ -14,7 +14,7 @@ options=('!debug' '!strip')
 depends=('gtk3')
 source_x86_64=("Slive-x86_64-linux.zip::https://github.com/SlotSun/dart_simple_live/releases/download/v1.8.7/Slive-x86_64-linux.zip" "https://raw.githubusercontent.com/SlotSun/dart_simple_live/refs/tags/v1.8.7/simple_live_app/assets/io.github.SlotSun.Slive.desktop")
 source_aarch64=("Slive-aarch64-linux.zip::https://github.com/SlotSun/dart_simple_live/releases/download/v1.8.7/Slive-aarch64-linux.zip" "https://raw.githubusercontent.com/SlotSun/dart_simple_live/refs/tags/v1.8.7/simple_live_app/assets/io.github.SlotSun.Slive.desktop")
-sha256sums_x86_64=('4c4b44933ee6d20ca47207995be4d160b8794b659c49c2d5d924cf12c76313cf' 'SKIP')
+sha256sums_x86_64=('2a6caee8e8684ed4c715d0724f10b358b9512d2b03fbdd3314dcdbc7a5eed637' 'SKIP')
 sha256sums_aarch64=('SKIP' 'SKIP')
 
 
