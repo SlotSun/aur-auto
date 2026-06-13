@@ -3,7 +3,7 @@
 pkgname=slive-bin
 _pkgname=slive
 pkgver=1.8.9
-pkgrel=1
+pkgrel=2
 pkgdesc="基于Flutter的聚合直播软件，支持多平台直播源聚合与观看"
 arch=('x86_64' 'aarch64')
 url="https://github.com/SlotSun/dart_simple_live"
